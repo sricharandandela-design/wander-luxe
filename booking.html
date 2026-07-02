@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Book Your Trip — Wanderluxe Travel</title>
+<meta name="description" content="Reserve your Wanderluxe Travel journey. Tell us your dates and destination — our trip designers will craft the rest.">
+<link rel="canonical" href="https://wanderluxe-travel.netlify.app/booking.html">
+<meta property="og:title" content="Book Your Trip — Wanderluxe Travel">
+<meta property="og:description" content="Reserve your luxury journey with Wanderluxe Travel.">
+<meta property="og:image" content="images/iceland.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>✈️</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav"><div class="container nav-inner">
+  <a href="index.html" class="logo">Wander<span>luxe</span></a>
+  <button class="menu-btn" aria-label="Menu">☰</button>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="destinations.html">Destinations</a></li>
+    <li><a href="packages.html">Packages</a></li>
+    <li><a href="booking.html">Booking</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div></header>
+
+<main>
+<section style="padding:3rem 0 1rem"><div class="container" style="text-align:center">
+  <span class="tag">Reserve your trip</span>
+  <h1>Book your <span class="gradient-text">journey</span></h1>
+  <p style="max-width:600px;margin:1rem auto 0">Share a few details and our trip designers will confirm your booking within 24 hours.</p>
+</div></section>
+
+<section><div class="container">
+  <form class="form" id="bookingForm" novalidate>
+    <div class="field"><label for="name">Full Name</label><input id="name" name="name" type="text" placeholder="Your full name"><span class="err" id="err-name"></span></div>
+    <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@example.com"><span class="err" id="err-email"></span></div>
+    <div class="field"><label for="phone">Phone (10 digits)</label><input id="phone" name="phone" type="tel" placeholder="9876543210"><span class="err" id="err-phone"></span></div>
+    <div class="field"><label for="package">Travel Package</label>
+      <select id="package" name="package">
+        <option value="">— Select a package —</option>
+        <option>Escape — Weekend Getaway</option>
+        <option>Signature — Multi-City</option>
+        <option>Private Jet — Bespoke</option>
+      </select><span class="err" id="err-package"></span>
+    </div>
+    <div class="field"><label for="program">Destination</label>
+      <select id="program" name="program">
+        <option value="">— Select a destination —</option>
+        <option>Santorini, Greece</option>
+        <option>Bali, Indonesia</option>
+        <option>Paris, France</option>
+        <option>Tokyo, Japan</option>
+        <option>Dubai, UAE</option>
+        <option>Reykjavík, Iceland</option>
+        <option>Maldives</option>
+        <option>Swiss Alps</option>
+      </select><span class="err" id="err-program"></span>
+    </div>
+    <div class="field"><label for="start">Preferred Travel Date</label><input id="start" name="start" type="date"><span class="err" id="err-start"></span></div>
+    <div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="4" placeholder="Tell us about your dream trip…"></textarea><span class="err" id="err-message"></span></div>
+    <button type="submit" class="btn btn-primary" style="width:100%">Reserve My Trip</button>
+    <div class="status" id="formStatus" role="status"></div>
+  </form>
+</div></section>
+</main>
+
+<footer><div class="container"><p>© 2026 Wanderluxe Travel.</p></div></footer>
+<script src="script.js"></script>
+</body>
+</html>
